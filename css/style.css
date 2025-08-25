@@ -223,7 +223,7 @@ button {
   width: 100%;
   height: 100%;
   background-color: #fff;
-
+  z-index: 100;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -244,6 +244,7 @@ button {
   display: flex;
   flex-direction: column;
   height: 100%;
+  
 }
 
 .mobile-menu-close {
@@ -727,6 +728,11 @@ color: #4D5AE5;
     position: relative;
     overflow: hidden;
   }
+  
+  /* .portfolio-img {
+    position: fixed; 
+    z-index: 100; 
+  } */
 
 .portfolio-overlate-text {
   font-weight: 400;
@@ -766,6 +772,10 @@ color: #4D5AE5;
 
     .portfolio-item {
       width: calc((100% - 24px) / 2);
+    }
+
+    .portfolio-img {
+      position: relative;
     }
 
 }
@@ -985,6 +995,7 @@ input::placeholder {
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
@@ -1007,7 +1018,7 @@ input::placeholder {
   position: absolute;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-  width: 228px;
+  width: 288px;
   min-height: 623px;
   border-radius: 4px;
   overflow-y: auto;
